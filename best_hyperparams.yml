@@ -1,0 +1,77 @@
+# 76.71 ± 1.92
+squirrel:
+  lr: 0.01
+  hidden_dim: 128
+  num_layers: 4
+  jk: "max"
+  patience: 400
+  conv_type: "complex-holonet"
+  alpha: 0
+  normalize: True
+  imag_weight_decay: 0.1
+  real_weight_decay: 0.1
+  k_plus: 5
+  exponent: -0.25
+  weight_penalty: exp
+
+# 80.33 ± 1.19
+chameleon:
+  lr: 0.005
+  hidden_dim: 128
+  num_layers: 5
+  jk: "cat"
+  patience: 400
+  conv_type: "complex-fabernet"
+  alpha: 0
+  normalize: True
+  imag_weight_decay: 1
+  real_weight_decay: 1
+  k_plus: 4
+  exponent: -0.25
+  weight_penalty: exp
+
+# 64.43 ± 0.28
+arxiv-year:
+  lr: 0.005
+  hidden_dim: 256
+  num_layers: 6
+  jk: "cat"
+  patience: 200
+  conv_type: "fabernet"
+  weight_decay: 0.1
+  k_plus: 1
+  exponent: -0.25
+  lrelu_slope: 0
+  weight_penalty: exp
+
+# 75.10 ± 0.03
+snap-patents:
+  lr: 0.01
+  hidden_dim: 32
+  num_layers: 5
+  jk: "max"
+  patience: 400
+  normalize: True
+  conv_type: "fabernet"
+  alpha: 0.5
+  weight_decay: 0.1
+  k_plus: 2 
+  exponent: -0.25
+  weight_penalty: exp
+  lrelu_slope:  0
+
+# 92.24 ± 0.432
+directed-roman-empire:
+  lr: 0.01
+  hidden_dim: 256
+  num_layers: 5
+  jk: "cat"
+  dropout: 0.2
+  patience: 200
+  conv_type: "fabernet"
+  weight_decay: 0.1
+  k_plus: 1
+  exponent: -0.25
+  lrelu_slope: 0
+  weight_penalty: exp
+  zero_order: True
