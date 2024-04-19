@@ -12,7 +12,6 @@ HolonNets are machine learning models that extend spectral convolutions to direc
     - [Code Structure](#code-structure)
   - [Running Experiments](#running-experiments)
     - [Node Classification Experiments](#node-classification-experiments)
-  - [Dataset Fix](#dataset-fix)
   - [Command Line Arguments](#command-line-arguments)
     - [Dataset Arguments](#dataset-arguments)
     - [Preprocessing Arguments](#preprocessing-arguments)
