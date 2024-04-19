@@ -146,6 +146,10 @@ The following command line arguments can be used with the code:
 
 
 
+## Credit
+This repository builds on top of Emanuele Rossi's [dir-gnn repository](https://github.com/emalgorithm/directed-graph-neural-network). 
+
+
 ## Citation
 
 ```bibtex
